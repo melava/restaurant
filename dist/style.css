@@ -1,0 +1,88 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#000000, 55%, #323232);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+#banner {
+    position: relative;
+    background-image: url(../img/pizza-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    height: 250px;
+}
+
+#banner #welcome {
+    border: 1px solid white;
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    font-size: 23px;
+}
+
+#content {
+    width: 85%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    border: 1px solid tomato;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.tab {
+    padding: 10px;
+    width: 33%;
+    font-size: 25px;
+}
+
+.tab:hover, .active {
+    background-color: #323232;
+}
+
+#tabs .menu {
+    border-right: 1px solid tomato;
+    border-left: 1px solid tomato;
+}
+
+#page-content {
+    border: 1px solid tomato;
+    border-top-color: transparent;
+    border-radius: 0 0 15px 15px;
+    background-color: #323232;
+    padding: 20px 25px;
+}
+
+#page-content .menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#page-content .menu ul li {
+    border: 1px solid white;
+    list-style-type: none;
+    margin: 0 0 15px 0;
+    padding: 40px 10px;
+    background-image: url(../img/pizza-mini.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hidden {
+    display: none;
+}
