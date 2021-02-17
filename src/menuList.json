@@ -1,0 +1,55 @@
+{
+    "Pizzas":[
+        {
+            "name": "Pizza Margherita",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza Bolognese",
+            "price": "12$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza quattro Staggione",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza quattro Fromaggi",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza Peperoni",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza Funghi",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza Cacciatore",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza Calzone",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza Salami piccante",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        },
+        {
+            "name": "Pizza Frutti di mare",
+            "price": "9$",
+            "img":"pizza-mini.jpg"
+        }
+    ]
+}
+  
