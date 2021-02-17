@@ -1,22 +1,28 @@
 import { headerModule } from './header'
-import { navModule } from './nav'
+import { navModule , choosePage } from './nav'
 import { content } from './content'
 import { HomeModule } from './homeContent'
-import { MenuModule } from './menuContent'
-import { contactModule } from './contactContent'
+
 
 
 
 
 
 const globalContainer = document.getElementById('content');
+const header = headerModule();
+const nav = navModule();
 const contentContainer = content();
+const homepage = HomeModule();
 
-globalContainer.parentNode.prepend(headerModule());
-globalContainer.appendChild(navModule());
-// contentContainer.appendChild(HomeModule());
-//contentContainer.appendChild(MenuModule());
-contentContainer.appendChild(contactModule());
+contentContainer.appendChild(homepage);
+nav.childNodes.forEach(tab => {
+    tab.addEventListener('click', choosePage);
+    
+});
+globalContainer.parentNode.prepend(header);
+globalContainer.appendChild(nav);
+globalContainer.appendChild(contentContainer);
 
 
-globalContainer.appendChild(contentContainer)
+
+

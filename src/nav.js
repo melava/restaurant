@@ -1,19 +1,21 @@
+import { addContent } from './content'
+
 const navModule = () => {
-    let nav = document.createElement('nav');
+    const nav = document.createElement('nav');
     nav.id = 'tabs';
 
-    let homeTab = document.createElement('div');
+    const homeTab = document.createElement('div');
     homeTab.classList.add('tab');
     homeTab.classList.add('home');
     homeTab.classList.add('active');
-    homeTab.textContent = 'Home'
+    homeTab.textContent = 'Home';
 
-    let menuTab = document.createElement('div');
+    const menuTab = document.createElement('div');
     menuTab.classList.add('tab');
     menuTab.classList.add('menu');
     menuTab.textContent = 'Menu';
 
-    let contactTab = document.createElement('div');
+    const contactTab = document.createElement('div');
     contactTab.classList.add('tab');
     contactTab.classList.add('contact');
     contactTab.textContent = 'Contact';
@@ -25,4 +27,14 @@ const navModule = () => {
     return nav
 }
 
-export { navModule }
+const choosePage = (e) => {
+    let siblings = e.target.parentNode.childNodes;
+    siblings.forEach(tab => {
+        tab.classList.remove('active')
+    });
+    let newPage = e.target.className.replace('tab', '').trim();
+    addContent(newPage);
+    e.target.classList.add('active');
+}
+
+export { navModule , choosePage }
