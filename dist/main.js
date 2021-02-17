@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n\n\nconst globalContainer = document.getElementById('content');\n\nglobalContainer.parentNode.prepend((0,_header__WEBPACK_IMPORTED_MODULE_0__.headerModule)());\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n\n\n\n\nconst globalContainer = document.getElementById('content');\n\nglobalContainer.parentNode.prepend((0,_header__WEBPACK_IMPORTED_MODULE_0__.headerModule)());\nglobalContainer.prepend((0,_nav__WEBPACK_IMPORTED_MODULE_1__.navModule)());\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/nav.js":
+/*!********************!*\
+  !*** ./src/nav.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navModule\": () => (/* binding */ navModule)\n/* harmony export */ });\nconst navModule = () => {\n    let nav = document.createElement('nav');\n    nav.id = 'tabs';\n\n    let homeTab = document.createElement('div');\n    homeTab.classList.add('tab');\n    homeTab.classList.add('home');\n    homeTab.classList.add('active');\n    homeTab.textContent = 'Home'\n\n    let menuTab = document.createElement('div');\n    menuTab.classList.add('tab');\n    menuTab.classList.add('menu');\n    menuTab.textContent = 'Menu';\n\n    let contactTab = document.createElement('div');\n    contactTab.classList.add('tab');\n    contactTab.classList.add('contact');\n    contactTab.textContent = 'Contact';\n\n    nav.appendChild(homeTab);\n    nav.appendChild(menuTab);\n    nav.appendChild(contactTab);\n\n    return nav\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/nav.js?");
 
 /***/ })
 
