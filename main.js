@@ -30,23 +30,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/homeContent.js":
-/*!****************************!*\
-  !*** ./src/homeContent.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HomeModule\": () => (/* binding */ HomeModule)\n/* harmony export */ });\nconst HomeModule = () => {\n    let home = document.createElement('div');\n    home.classList.add('home');\n\n    let h1 = document.createElement('h1');\n    h1.textContent = 'Pizzzzza!';\n\n    let p1 = document.createElement('p');\n    p1.textContent = 'Come and eat the yummiest pizza ever!';\n\n    let p2 = document.createElement('p');\n    p2.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab laboriosam vero sunt suscipit saepe quasi sit molestiae distinctio ipsam vel sequi qui, consequatur, blanditiis dolorum rem facere mollitia laudantium commodi!';\n\n    home.appendChild(h1);\n    home.appendChild(p1);\n    home.appendChild(p2);\n    \n    return home\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/homeContent.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content */ \"./src/content.js\");\n/* harmony import */ var _homeContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./homeContent */ \"./src/homeContent.js\");\n\n\n\n\n\n\n\nconst globalContainer = document.getElementById('content');\nconst contentContainer = (0,_content__WEBPACK_IMPORTED_MODULE_2__.content)();\n\nglobalContainer.parentNode.prepend((0,_header__WEBPACK_IMPORTED_MODULE_0__.headerModule)());\nglobalContainer.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__.navModule)());\ncontentContainer.appendChild((0,_homeContent__WEBPACK_IMPORTED_MODULE_3__.HomeModule)());\nglobalContainer.appendChild(contentContainer)\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content */ \"./src/content.js\");\n/* harmony import */ var _menuContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menuContent */ \"./src/menuContent.js\");\n\n\n\n// import { HomeModule } from './homeContent'\n\n\n\n\n\nconst globalContainer = document.getElementById('content');\nconst contentContainer = (0,_content__WEBPACK_IMPORTED_MODULE_2__.content)();\n\nglobalContainer.parentNode.prepend((0,_header__WEBPACK_IMPORTED_MODULE_0__.headerModule)());\nglobalContainer.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__.navModule)());\n// contentContainer.appendChild(HomeModule());\ncontentContainer.appendChild((0,_menuContent__WEBPACK_IMPORTED_MODULE_3__.MenuModule)());\n\nglobalContainer.appendChild(contentContainer)\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menuContent.js":
+/*!****************************!*\
+  !*** ./src/menuContent.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"MenuModule\": () => (/* binding */ MenuModule)\n/* harmony export */ });\nconst MenuModule = () => {\n    let menu = document.createElement('div');\n    menu.classList.add('menu');\n    \n    let h1 = document.createElement('h1');\n    h1.textContent = 'You must make your pick!';\n\n    let p1 = document.createElement('p');\n    p1.textContent = 'Even if it\\'s so hard to choose between all our delicious pizza!';\n\n    let ul = document.createElement('ul');\n\n    let json = __webpack_require__(/*! ./menuList.json */ \"./src/menuList.json\");\n    let pizzaList = json[\"Pizzas\"];\n    pizzaList.forEach(pizza => {\n        let li = document.createElement('li');\n        li.textContent = `${pizza.name} - ${pizza.price}`;\n        li.style.backgroundImage = `url(../img/${pizza.img})`\n        ul.appendChild(li)\n    });\n\n    \n    menu.appendChild(h1);\n    menu.appendChild(p1);\n    menu.appendChild(ul);\n    \n    return menu\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/menuContent.js?");
+
+/***/ }),
+
+/***/ "./src/menuList.json":
+/*!***************************!*\
+  !*** ./src/menuList.json ***!
+  \***************************/
+/***/ ((module) => {
+
+eval("module.exports = JSON.parse('{\"Pizzas\":[{\"name\":\"Pizza Margherita\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza Bolognese\",\"price\":\"12$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza quattro Staggione\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza quattro Fromaggi\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza Peperoni\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza Funghi\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza Cacciatore\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza Calzone\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza Salami piccante\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"},{\"name\":\"Pizza Frutti di mare\",\"price\":\"9$\",\"img\":\"pizza-mini.jpg\"}]}');\n\n//# sourceURL=webpack://restaurant/./src/menuList.json?");
 
 /***/ }),
 
