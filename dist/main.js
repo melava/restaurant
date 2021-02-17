@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contactContent.js":
+/*!*******************************!*\
+  !*** ./src/contactContent.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contactModule\": () => (/* binding */ contactModule)\n/* harmony export */ });\nconst contactModule = () => {\n    let contact = document.createElement('div');\n    contact.classList.add('contact');\n\n    let h1 = document.createElement('h1');\n    h1.textContent = 'We are located next to you!';\n\n    let h3_1 = document.createElement('h3');\n    h3_1.textContent = 'How to make an order';\n    \n    let p1 = document.createElement('p');\n    p1.textContent = 'Just call us: xxxx xxx xxx';\n\n    let h3_2 = document.createElement('h3');\n    h3_2.textContent = 'Our adress to come pick up your order';\n\n    let p2 = document.createElement('p');\n    p2.textContent = 'Anonymus street nr. 123';\n    let p3 = document.createElement('p');\n    p3.textContent = '88320 Incredible City';\n    let p4 = document.createElement('p');\n    p3.textContent = 'Beloved Republic';\n\n    contact.appendChild(h1);\n    contact.appendChild(h3_1);\n    contact.appendChild(p1);\n    contact.appendChild(h3_2);\n    contact.appendChild(p2);\n    contact.appendChild(p3);\n    contact.appendChild(p4);\n\n    \n    return contact\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/contactContent.js?");
+
+/***/ }),
+
 /***/ "./src/content.js":
 /*!************************!*\
   !*** ./src/content.js ***!
@@ -30,13 +40,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/homeContent.js":
+/*!****************************!*\
+  !*** ./src/homeContent.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"HomeModule\": () => (/* binding */ HomeModule)\n/* harmony export */ });\nconst HomeModule = () => {\n    let home = document.createElement('div');\n    home.classList.add('home');\n\n    let h1 = document.createElement('h1');\n    h1.textContent = 'Pizzzzza!';\n\n    let p1 = document.createElement('p');\n    p1.textContent = 'Come and eat the yummiest pizza ever!';\n\n    let p2 = document.createElement('p');\n    p2.textContent = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab laboriosam vero sunt suscipit saepe quasi sit molestiae distinctio ipsam vel sequi qui, consequatur, blanditiis dolorum rem facere mollitia laudantium commodi!';\n\n    home.appendChild(h1);\n    home.appendChild(p1);\n    home.appendChild(p2);\n    \n    return home\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/homeContent.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content */ \"./src/content.js\");\n/* harmony import */ var _menuContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menuContent */ \"./src/menuContent.js\");\n\n\n\n// import { HomeModule } from './homeContent'\n\n\n\n\n\nconst globalContainer = document.getElementById('content');\nconst contentContainer = (0,_content__WEBPACK_IMPORTED_MODULE_2__.content)();\n\nglobalContainer.parentNode.prepend((0,_header__WEBPACK_IMPORTED_MODULE_0__.headerModule)());\nglobalContainer.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__.navModule)());\n// contentContainer.appendChild(HomeModule());\ncontentContainer.appendChild((0,_menuContent__WEBPACK_IMPORTED_MODULE_3__.MenuModule)());\n\nglobalContainer.appendChild(contentContainer)\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content */ \"./src/content.js\");\n/* harmony import */ var _homeContent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./homeContent */ \"./src/homeContent.js\");\n/* harmony import */ var _menuContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./menuContent */ \"./src/menuContent.js\");\n/* harmony import */ var _contactContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./contactContent */ \"./src/contactContent.js\");\n\n\n\n\n\n\n\n\n\n\n\nconst globalContainer = document.getElementById('content');\nconst contentContainer = (0,_content__WEBPACK_IMPORTED_MODULE_2__.content)();\n\nglobalContainer.parentNode.prepend((0,_header__WEBPACK_IMPORTED_MODULE_0__.headerModule)());\nglobalContainer.appendChild((0,_nav__WEBPACK_IMPORTED_MODULE_1__.navModule)());\n// contentContainer.appendChild(HomeModule());\n//contentContainer.appendChild(MenuModule());\ncontentContainer.appendChild((0,_contactContent__WEBPACK_IMPORTED_MODULE_5__.contactModule)());\n\n\nglobalContainer.appendChild(contentContainer)\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ }),
 
