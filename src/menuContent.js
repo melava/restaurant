@@ -1,6 +1,6 @@
 const MenuModule = () => {
     let menu = document.createElement('div');
-    menu.classList.add('menu');
+    menu.id = 'menu-content';
     
     let h1 = document.createElement('h1');
     h1.textContent = 'You must make your pick!';

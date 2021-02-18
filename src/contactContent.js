@@ -1,6 +1,6 @@
 const contactModule = () => {
     let contact = document.createElement('div');
-    contact.classList.add('contact');
+    contact.id = 'contact-content';
 
     let h1 = document.createElement('h1');
     h1.textContent = 'We are located next to you!';

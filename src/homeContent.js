@@ -1,6 +1,6 @@
 const HomeModule = () => {
     let home = document.createElement('div');
-    home.classList.add('home');
+    home.id = 'home-content';
 
     let h1 = document.createElement('h1');
     h1.textContent = 'Pizzzzza!';
