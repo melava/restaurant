@@ -12,17 +12,17 @@
         },
         {
             "name": "Pizza quattro Staggione",
-            "price": "9$",
+            "price": "10$",
             "img":"pizza-mini.jpg"
         },
         {
             "name": "Pizza quattro Fromaggi",
-            "price": "9$",
+            "price": "11$",
             "img":"pizza-mini.jpg"
         },
         {
             "name": "Pizza Peperoni",
-            "price": "9$",
+            "price": "10$",
             "img":"pizza-mini.jpg"
         },
         {
@@ -32,7 +32,7 @@
         },
         {
             "name": "Pizza Cacciatore",
-            "price": "9$",
+            "price": "10$",
             "img":"pizza-mini.jpg"
         },
         {
@@ -42,12 +42,12 @@
         },
         {
             "name": "Pizza Salami piccante",
-            "price": "9$",
+            "price": "11$",
             "img":"pizza-mini.jpg"
         },
         {
             "name": "Pizza Frutti di mare",
-            "price": "9$",
+            "price": "12$",
             "img":"pizza-mini.jpg"
         }
     ]
