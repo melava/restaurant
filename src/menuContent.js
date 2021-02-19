@@ -15,7 +15,7 @@ const MenuModule = () => {
     pizzaList.forEach(pizza => {
         let li = document.createElement('li');
         li.textContent = `${pizza.name} - ${pizza.price}`;
-        li.style.backgroundImage = `url(../img/${pizza.img})`
+        li.style.backgroundImage = `url(img/${pizza.img})`
         ul.appendChild(li)
     });
 

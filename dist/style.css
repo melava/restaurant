@@ -10,7 +10,7 @@ body {
 
 #banner {
     position: relative;
-    background-image: url(../img/pizza-banner.jpg);
+    background-image: url(img/pizza-banner.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: cover;
@@ -85,7 +85,7 @@ nav {
     list-style-type: none;
     margin: 0 0 15px 0;
     padding: 40px 10px;
-    background-image: url(../img/pizza-mini.jpg);
+    background-image: url(img/pizza-mini.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
